@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+       .container{
+        display: grid;
+        grid-template-areas: 
+        "header menu menu menu"
+        "hero hero hero hero"
+        "hero hero hero hero"
+        "main main main image"
+        "main main main extra"
+        "banner banner banner banner";
+        height: 97vh;
+        width: 98vw;
+        border: 1px solid black;
+       /* justify-content: center;   */
+       }
+
+       .container div{
+        text-align: center;
+        font-size: 28px;
+       }
+       .header{
+        grid-area: header;
+        background-color: navy;
+        color: white;
+        align-content: center;
+       }
+       .menu{
+        grid-area: menu;
+        background-color: red;
+        color: white;
+        align-content: center;
+
+       }
+       .hero{
+        background-color: rgb(84, 175, 228);
+        color: white;
+        grid-area: hero;
+        align-content: center;
+
+       }
+       .main{
+        grid-area: main;
+        background-color: navy;
+        color: white;
+        width: 70%;
+        align-content: center;
+
+       }
+       .image{
+        grid-area: image;
+        background-color: rgb(188, 225, 241);
+        color: black;
+        align-content: center;
+
+       }
+       .extra{
+        grid-area: extra;
+        background-color: rgb(41, 192, 41);
+        color: black;
+        align-content: center;
+
+       }
+       .banner{
+        grid-area: banner;
+        background-color: rgb(234, 219, 50);
+        color: black;
+        align-content: center;
+
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="hero">Hero</div>
+        <div class="main">Main</div>
+        <div class="image">Image</div>
+        <div class="extra">Extra</div>
+        <div class="banner">Banner</div>
+    </div>
+</body>
+</html>

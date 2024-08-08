@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas:
+            "title search search search login cart"
+            "filter scroll scroll scroll scroll adv"
+            "filter pro1 pro2 pro3 pro4 pro5"
+            "filter foot foot foot foot foot";
+            height: 97vh;
+            width: 98vw;
+             
+
+ 
+        }
+
+        .container div{
+            font-size: 22px;
+            border: 2px solid black;
+            text-align: center;
+
+        }
+
+        .title{
+            grid-area:title ;
+            background-color:rgb(34, 90, 244);
+            align-content: center;
+
+        }
+        
+        .search{
+            grid-area:search ;
+            align-content: center;
+            background-color: rgb(5, 172, 249);
+        }
+        
+        .login{
+            grid-area:login ;
+            align-content: center;
+            background-color: rgb(75, 188, 249);
+        }
+        
+        .cart{
+            grid-area:cart;
+            align-content: center;
+            background-color:rgb(131, 222, 242);
+        }
+        
+        .filter{
+            grid-area:filter ;
+            align-content: center;
+            background-color: rgb(65, 120, 249);
+        }
+        
+        .scroll{
+            grid-area:scroll ;
+            align-content: center;
+            background-color:rgb(180, 177, 177);
+        }
+        
+        .adv{
+            grid-area:adv ;
+            align-content: center;
+            background-color: grey;
+        }
+        
+        .pro1{
+            grid-area:pro1 ;
+            align-content: center;
+            background-color: red;
+        }
+        
+        .pro2{
+            grid-area:pro2 ;
+            align-content: center;
+            background-color: rgb(242, 90, 90);
+        }
+        
+        .pro3{
+            grid-area:pro3 ;
+            align-content: center;
+            background-color: red;
+        }
+        
+        .pro4{
+            grid-area:pro4 ;
+            align-content: center;
+            background-color: rgb(230, 117, 117);
+        }
+        
+        .pro5{
+            grid-area:pro5 ;
+            align-content: center;
+            background-color: red;
+        }
+        
+        .foot{
+            grid-area: foot;
+            align-content: center;
+            background-color:rgb(131, 222, 242);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">Title</div>
+        <div class="search">Search Bar</div>
+        <div class="login">Login</div>
+        <div class="cart">Cart</div>
+        <div class="filter">Filters</div>
+        <div class="scroll">Scrolling</div>
+        <div class="adv">Advertisement</div>
+        <div class="pro1">Product1</div>
+        <div class="pro2">product2</div>
+        <div class="pro3">Product3</div>
+        <div class="pro4">Product4</div>
+        <div class="pro5">Product5</div>
+        <div class="foot">footer</div>
+    </div>
+</body>
+</html>
